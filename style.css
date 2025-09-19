@@ -1,64 +1,29 @@
+/* Reset básico e box-sizing */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Estilos do corpo da página */
 body {
-    width: 100vw;
+    width: 100%; /* Mais seguro que 100vw */
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: sans-serif; /* Boa prática definir uma fonte */
+    background-color: #912121;
+
 }
 
-header, footer {
-    height: 100px;
-    background-color: #CF2425;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DA6062;
-}
-.background-logo {
-    position: absolute;
-    width: 100%;
-    max-height: 100%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.content-text {
-    position: absolute;
-    color: #ffffff;
-    font-size: 2.5rem;
-    width: 240px;
-    transform: translateX(-100%);
-    text-align: end;
-}
-
-.content-image {
-    height: 85vh;
-}
-
-
+/* Estilos do Header */
 header {
     height: 100px;
+    
+    color: #ffffff;
     display: flex;
     align-items: center;
     gap: 24px;
-    color: #FFFFFF;
     padding-left: 75px;
 }
 
@@ -66,14 +31,55 @@ header span {
     font-weight: 600;
 }
 
+/* Estilos do conteúdo principal */
+main {
+    flex-grow: 1; /* Faz o main ocupar o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Define o contexto de posicionamento para os filhos absolutos */
+    overflow: hidden; /* Evita que elementos 'escapem' */
+    /* O background foi removido para que o z-index: -1 funcione */
+  
+}
+
+/* Logo de fundo */
+.background-logo {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1; /* Agora funciona, pois o fundo do main foi removido */
+    opacity: 0.1; /* Exemplo: deixar o logo mais sutil */
+    /* Seus outros estilos podem estar aqui */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)
+}
+
+/* Imagem principal do conteúdo */
+.content-image {
+    height: 85vh;
+}
+
+/* Texto ao lado da imagem */
+.content-text {
+    position: absolute;
+    color: #fbfbfb;
+    font-size: 2.5rem;
+    width: 240px;
+    transform: translateX(-100%); /* Esconde o texto à esquerda em telas grandes */
+    text-align: end;
+}
+
+/* Estilos do Footer */
 footer {
     height: 100px;
+   
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 75px;
-    padding-left: 75px;
-    color: #FFFFFF;
+    padding: 0 75px; /* Simplificando o padding */
     font-weight: 100;
 }
 
@@ -81,17 +87,19 @@ footer div {
     width: 64px;
 }
 
+/* Media Query para telas menores (responsividade) */
 @media (max-width: 768px) {
     header {
         padding-left: 25px;
     }
 
     .content-text {
-        transform: translateX(0%);
+        transform: translateX(0); /* Traz o texto de volta para a posição original */
         top: 80px;
-        font-size: 1rem;
-        width: 100px;
+        font-size: 1.5rem; /* Ajuste de tamanho */
+        width: 150px;
         text-align: center;
+    
     }
 
     .content-image {
@@ -99,8 +107,6 @@ footer div {
     }
 
     footer {
-        padding: 0px 25px;
+        padding: 0 25px;
     }
 }
-
-
