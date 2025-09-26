@@ -1,18 +1,66 @@
-O que é um repositório no Git e qual a sua importância?
-Qual a função do Git Bash?
-O que faz o comando git add e qual a diferença entre git add <arquivo> e git add .?
-Por que utilizamos o ponto (.) no comando git add .?
-Explique o comando git commit e por que é importante criar uma mensagem descritiva.
-Qual a função do comando git push?
-Qual a importância de criar commits frequentes durante o desenvolvimento de um projeto?
-Explique a função das tags HTML e como elas estruturam uma página.
+1: O que é um repositório no Git e qual a sua importância?
+
+R: Um repositório é a pasta do seu projeto onde o Git salva todo o histórico de alterações. Sua importância é garantir o controle de versão, permitindo que você Corrija erros, consulte mudanças antigas e colabore com outras pessoas de forma segura.
+
+2:Qual a função do Git Bash?
+
+R:Git Bash é um terminal para Windows que permite executar os comandos do Git. Ele serve como uma interface de linha de comando para você dar ordens ao Git, como salvar, enviar ou baixar alterações de código em seus projetos.
+
+3:O que faz o comando git add e qual a diferença entre git add <arquivo> e git add .?
+
+R:O comando git add seleciona e prepara as alterações que você deseja salvar no próximo commit. git add <arquivo> prepara um único arquivo, enquanto git add . é um atalho que prepara todas as novas alterações feitas na pasta atual de uma só vez.
+
+4:Por que utilizamos o ponto (.) no comando git add .?
+
+R: O ponto (.) em terminais é um atalho que significa "este diretório atual". Usamos no git add . para Mandar o Git a adicionar todas as modificações da pasta atual e de suas subpastas, de forma rápida e prática, sem precisar listar cada arquivo.
+
+5:xplique o comando git commit e por que é importante criar uma mensagem descritiva.
+
+R:O git commit salva permanentemente as alterações preparadas, criando um "ponto na história" do projeto. A mensagem é crucial porque ela explica o que foi feito naquele commit, ajudando você e sua equipe a entenderem o histórico do projeto no futuro.
+
+6:Qual a função do comando git push?
+
+R: O comando git push envia seus commits locais (o histórico de alterações salvas no seu computador) para um repositório remoto na nuvem, como o GitHub. Sua função principal é compartilhar seu progresso com a equipe e manter um backup seguro do seu trabalho.
+
+7:Qual a importância de criar commits frequentes durante o desenvolvimento de um projeto?
+
+R: Fazer commits frequentes cria "Salvamentos" pequenos no seu projeto. Isso facilita a localização de bugs, permite reverter alterações específicas sem perder muito trabalho e torna o histórico do projeto muito mais claro e compreensível para todos.
+
+8:Explique a função das tags HTML e como elas estruturam uma página.
 O que são atributos em uma tag HTML e qual a sua função?
-O que é o Emmet e como ele facilita o desenvolvimento de páginas HTML?
-O que é o box-sizing no CSS e por que usamos ele no reset inicial?
-Por que é importante utilizar tags semânticas no HTML?
-O que são media queries no CSS e qual a sua função?
-Qual a função do GitHub Pages?
-O que é o Flexbox no CSS e para que ele é utilizado?
-Qual a diferença entre justify-content e align-items em um container Flexbox?
-Como o flex-grow funciona e qual o seu propósito no layout Flexbox?
-Explique a diferença entre flex-direction: column; e flex-direction: row;.
+
+R: Atributos são informações extras que adicionamos a uma tag para dar a ela mais detalhes ou funcionalidades.
+9:O que é o Emmet e como ele facilita o desenvolvimento de páginas HTML?
+
+R: Emmet é uma ferramenta de produtividade que funciona como um "super atalho" para escrever HTML e CSS. Você digita uma expressão curta e ele a expande para o código completo, economizando um tempo enorme de digitação.
+
+10:O que é o box-sizing no CSS e por que usamos ele no reset inicial?
+
+R: box-sizing: border-box; faz com que o padding e a border de um elemento sejam calculados dentro da sua largura e altura totais, em vez de somar a elas.
+11:Por que é importante utilizar tags semânticas no HTML?
+
+R: Usar tags semânticas (<header>, <nav>, <article>) descreve o propósito do conteúdo para o navegador. Isso é vital para a acessibilidade (ajudando leitores de tela).
+
+12:O que são media queries no CSS e qual a sua função?
+
+R: Media queries são regras no CSS que aplicam estilos apenas se uma condição for atendida, como a largura da tela. Sua função é criar sites que respondem imediatamente, permitindo que o layout se adapte para ter uma boa aparência e usabilidade em celulares, tablets e Pc.
+
+13:Qual a função do GitHub Pages?
+
+R: GitHub Pages é um serviço gratuito do GitHub para hospedar sites estáticos. Sua função é permitir que você publique um site na internet de forma rápida e simples, diretamente a partir de um repositório.
+
+14:O que é o Flexbox no CSS e para que ele é utilizado?
+
+R: Flexbox é um modelo de layout do CSS criado para alinhar, distribuir e organizar itens dentro de um contêiner. Ele é utilizado para criar layouts modernos e complexos de forma muito mais simples e flexível do que métodos antigos, como centralizar elementos ou criar grades.
+
+15:Qual a diferença entre justify-content e align-items em um container Flexbox?
+
+R: justify-content alinha os itens no eixo principal (horizontal), controlando seu espaçamento e posição. align-items alinha os itens no eixo secundário (vertical).
+
+16:Como o flex-grow funciona e qual o seu propósito no layout Flexbox?
+
+R: flex-grow define a capacidade de um item "crescer" e ocupar o espaço livre em um contêiner. Seu propósito é criar layouts fluidos que se adaptam, permitindo que elementos se estiquem para preencher o espaço disponível de forma proporcional, sem deixar vãos.
+
+17:Explique a diferença entre flex-direction: column; e flex-direction: row;
+
+R: flex-direction: row organiza os itens lado a lado, em uma linha horizontal. Já flex-direction: column empilha os itens um sobre o outro, em uma coluna vertical. A propriedade simplesmente define se o fluxo de organização dos elementos será horizontal ou vertical.
